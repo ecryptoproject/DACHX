@@ -1,0 +1,11 @@
+wget -N https://raw.githubusercontent.com/dachcoin/masternode-install/master/dach_install.sh
+
+bash dach_install.sh
+
+
+dach-cli getinfo
+dach-cli masternode
+
+Start: systemctl start dach.service
+Stop: systemctl stop dach.service
+Please check dach daemon is running with the following command: systemctl status dach.service
